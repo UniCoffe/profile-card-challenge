@@ -1,0 +1,80 @@
+
+body {
+    background-color: hsl(185, 75%, 39%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.card {
+    color: hsl(227, 10%, 46%);
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    display: block;
+    text-align: center;
+}
+
+.name, .value {
+    font-weight: bold;
+}
+
+strong, .value {
+    color: black;
+}
+
+.profile-picture {
+    margin: 30px 0;
+}
+
+.city {
+    margin: 50px;
+}
+
+.profile-info {
+    border-top: solid 5px lightgray;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-info p{
+    flex-direction: row;   
+}
+
+@media (max-width: 540px) {
+
+    *{
+        font-size: 20px;
+    }
+
+    .profile-picture {
+        margin: 15px 0;
+    }
+
+    .city {
+        margin: 25px;
+    }
+
+    .card {
+        height: 300px;
+        width: 300px;
+    }
+
+    .profile-picture {
+        height: 70px;
+        width: 70px;
+    }
+}
